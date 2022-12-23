@@ -10,10 +10,10 @@ variables:
 
 resources:
   repositories: 
-  - repository: MyGitHubRepo
+  - repository: templates
     type: github
     name: rajeshwarandevops/azdevops_pipeline_template
-    endpoint: github.com/rajeshwarandevops
+    endpoint: github.com_rajeshwarandevops
 
 steps:
  - template: pipeline_template.yaml@templates
