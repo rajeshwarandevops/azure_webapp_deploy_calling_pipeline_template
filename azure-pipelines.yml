@@ -6,7 +6,7 @@ pool:
   vmImage: Default
 
 variables:
-- group: webapp-dev-group
+- group: webapp-dev-group1
 
 resources:
   repositories: 
