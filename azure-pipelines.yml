@@ -3,7 +3,10 @@ trigger:
 - main
 
 pool:
-  vmImage: Default
+  name: Default #Testing with self-hosted agent
+
+# pool:
+#   vmImage: Default
 
 variables:
 - group: webapp-dev-group1
