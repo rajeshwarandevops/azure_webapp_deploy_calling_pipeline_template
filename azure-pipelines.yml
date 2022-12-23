@@ -1,0 +1,24 @@
+
+trigger:
+- main
+
+pool:
+  vmImage: Default
+
+variables:
+- group: webapp-dev-group
+
+resources:
+  repositories: 
+  - repository: MyGitHubRepo
+    type: github
+    name: azdevops_pipeline_template/pipeline_template.yaml
+    endpoint: github.com_azdevops_pipeline_template
+
+steps:
+ - template: pipeline_template.yaml@templates
+   parameters:
+     serviceconnection: $(azureconnection)
+     webappname: $(webappname)
+ 
+ 
