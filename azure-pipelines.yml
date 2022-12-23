@@ -13,7 +13,7 @@ resources:
   - repository: MyGitHubRepo
     type: github
     name: rajeshwarandevops/azdevops_pipeline_template
-    endpoint: github.com_rarajeshwarandevops
+    endpoint: github.com_rajeshwarandevops
 
 steps:
  - template: pipeline_template.yaml@templates
